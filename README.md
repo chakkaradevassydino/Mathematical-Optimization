@@ -1,96 +1,109 @@
+# 🚀 Optimization Projects
 
-
-1. Portfolio Optimization using Modern Portfolio Theory (MPT)
-
-Overview
-
-This project implements Modern Portfolio Theory (MPT) to optimize stock allocation, maximizing returns while minimizing risk using mathematical optimization techniques.
-
-Features
-
-Fetches real-time stock data using Alpha Vantage API
-
-Computes daily returns, expected returns, and risk (covariance matrix)
-
-Uses SciPy's minimize function for optimization
-
-Plots the Efficient Frontier
-
-
-
-# 📊 Portfolio Optimization using Modern Portfolio Theory (MPT)
-
-## 📌 Overview
-
-This project demonstrates **Portfolio Optimization** using **Modern Portfolio Theory (MPT)**, developed by **Harry Markowitz**. The objective is to determine the best allocation of investments to maximize returns while minimizing risk using **mathematical optimization techniques**.
-
-## 🚀 Features
-
-- Fetches real-time stock data using **Alpha Vantage API** 📈
-- Computes **daily returns**, **expected returns**, and **risk (covariance matrix)** 🔢
-- Utilizes **SciPy's `minimize` function** for portfolio optimization 📊
-- Plots the **Efficient Frontier** to visualize optimal portfolios 🖼️
-- Identifies the **optimal risk-return trade-off portfolio** ⭐
-
-## 📂 Project Structure
-
-```
-Portfolio-Optimization/
-│── stock_data.csv               # Saved stock price data
-│── portfolio_optimization.ipynb # Jupyter Notebook with full implementation
-│── README.md                    # Project description (this file)
-```
-
-## 🛠 Installation & Setup
-
-1. **Clone this repository**:
-
-   ```sh
-   git clone https://github.com/your-username/Portfolio-Optimization.git
-   cd Portfolio-Optimization
-   ```
-
-2. **Install required Python libraries**:
-
-   ```sh
-   pip install pandas numpy matplotlib scipy alpha_vantage
-   ```
-
-3. **Obtain a free API key from Alpha Vantage**:
-
-   - Sign up at [Alpha Vantage](https://www.alphavantage.co/support/#api-key)
-   - Replace `YOUR_ALPHA_VANTAGE_API_KEY` in the code with your personal key
-
-4. **Run the Jupyter Notebook**:
-
-   ```sh
-   jupyter notebook
-   ```
-
-## 📊 Example Results
-
-### **Optimal Portfolio Allocation:**
-
-```
-AAPL: 25.12%
-MSFT: 30.45%
-GOOGL: 20.22%
-AMZN: 15.78%
-TSLA: 8.43%
-```
-
-### **Efficient Frontier Visualization:**
-
-The chart below illustrates different portfolio combinations. The **red star** represents the optimal risk-return trade-off portfolio.
-
-*(Run the notebook to generate this image)*
-
-## 🎯 Why This Project Matters
-
-✅ Uses **real financial market data**✅ Demonstrates **mathematical optimization concepts**✅ Enhances **data science and finance skills**✅ Valuable for **technical interviews and portfolio showcases** 🎓
+This repository contains implementations of various optimization techniques, including **Portfolio Optimization**, **Basic Linear Programming with Gurobi**, and **Multilinear Linear Optimization**. These projects demonstrate different approaches to solving optimization problems using mathematical modeling and computational tools.
 
 ---
 
-## 📢 Contributions & Feedback
+## 📌 Projects Overview
 
-Feel free to fork this repository, suggest improvements, or reach out if you have questions! Collaboration and feedback are always welcome. 🚀
+### 1️⃣ Portfolio Optimization
+**Objective:** Optimize asset allocation to maximize returns while minimizing risk.
+
+🔹 **Techniques Used:**
+- Mean-variance optimization (Markowitz Model)
+- Efficient Frontier Analysis
+- Risk-adjusted return calculations
+- Constraints on asset weights
+
+🔹 **Tools & Libraries:**
+- Python (NumPy, Pandas, Matplotlib)
+- CVXPY for convex optimization
+- SciPy for numerical methods
+
+🔹 **Key Features:**
+- Computes optimal asset allocation
+- Plots the Efficient Frontier
+- Includes risk constraints and diversification limits
+- Generates insights for better investment decisions
+
+📂 **File:** `portfolio_optimization.ipynb`
+
+---
+
+### 2️⃣ Basic Linear Programming with Gurobi
+**Objective:** Solve linear programming problems using Gurobi.
+
+🔹 **Techniques Used:**
+- Formulating linear programming problems
+- Setting objective functions and constraints
+- Solving optimization problems using the Gurobi solver
+
+🔹 **Tools & Libraries:**
+- Python (Gurobi, NumPy, Pandas)
+- Gurobi Optimizer
+
+🔹 **Key Features:**
+- Implements a simple linear programming model
+- Demonstrates constraint handling
+- Uses Gurobi’s powerful solver for optimal solutions
+
+📂 **File:** `basic_linear_programming_gurobi.ipynb`
+
+---
+
+### 3️⃣ Multilinear Linear Optimization
+**Objective:** Solve multi-variable optimization problems with linear constraints.
+
+🔹 **Techniques Used:**
+- Multilinear optimization models
+- Handling constraints with multiple variables
+- Computational optimization approaches
+
+🔹 **Tools & Libraries:**
+- Python (NumPy, Pandas, Matplotlib)
+- SciPy and CVXPY for mathematical modeling
+
+🔹 **Key Features:**
+- Optimizes multi-variable objective functions
+- Implements real-world constraints
+- Provides graphical visualization of results
+
+📂 **File:** `multilinear_linear_optimization.ipynb`
+
+---
+
+## ⚙️ Installation & Usage
+To run these notebooks, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/chakkaradevassydino/Mathematical-Optimization.git
+   cd Mathematical-Optimization
+   ```
+2. Create a virtual environment (optional but recommended):
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. Open Jupyter Notebook:
+   ```bash
+   jupyter notebook
+   ```
+5. Navigate to the respective `.ipynb` file and run the cells.
+
+---
+
+## 📖 License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🤝 Contributing
+Contributions are welcome! If you’d like to contribute, please fork the repository and submit a pull request.
+
+## 📩 Contact
+For any questions or feedback, feel free to reach out:
+- **Email:** dinoingermanyy@gmail.com
+- **GitHub:** [chakkaradevassydino](https://github.com/chakkaradevassydino/Mathematical-Optimization)
